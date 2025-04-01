@@ -1,4 +1,4 @@
-% Предикат для подсчета количества нечетных отрицательных чисел в списке.
+
 count_odd_negative([], 0).
 
 count_odd_negative([Head|Tail], Count) :-
@@ -16,7 +16,7 @@ count_odd_negative_elements(List, Count) :-
 
 
 read_list(List) :-
-    write('Введите список целых чисел, разделенных пробелами, затем нажмите Enter: '), nl,
+    write('Р’РІРµРґРёС‚Рµ С‡РёСЃР»Р° С‡РµСЂРµР· РїСЂРѕР±РµР» РґР»СЏ СЃРѕР·РґР°РЅРёСЏ СЃРїРёСЃРєР°: '), nl,
     read_list_helper([], List).
 
 read_list_helper(Acc, List) :-
@@ -35,5 +35,5 @@ string_to_integer(String, Integer) :-
 main :-
     read_list(List),
     count_odd_negative_elements(List, Count),
-    write('Список: '), write(List), nl,
-    write('Количество нечетных отрицательных элементов: '), write(Count), nl.
+    write('РЎРїРёСЃРѕРє: '), write(List), nl,
+    write('РљРѕР»-РІРѕ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹С… РЅРµС‡РµС‚РЅС‹С… СЌР»РµРјРµРЅС‚Р°: '), write(Count), nl.
